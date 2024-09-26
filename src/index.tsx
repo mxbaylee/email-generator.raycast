@@ -7,7 +7,6 @@
 
 // Optional parameters:
 // @raycast.icon assets/icon.png
-// @raycast.packageName Email Generator
 
 // Documentation:
 // @raycast.description Generate dynamic email addresses for registration.
@@ -45,11 +44,6 @@ export default function Command() {
         title: error,
       });
       setError(false);
-    } else if (!activeDomain) {
-      showToast({
-        style: Toast.Style.Failure,
-        title: 'Failed to parse active tab.',
-      });
     }
   }, [error, activeDomain]);
 

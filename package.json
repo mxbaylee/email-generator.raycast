@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "email-generator-raycast",
-  "title": "Email Generator",
-  "description": "Generate dynamic email addresses for registration.",
+  "name": "random-email-generator",
+  "title": "Random Email Generator",
+  "description": "Quickly generate random email addresses for your wildcard domain based on the active browser window.",
   "icon": "icon.png",
   "author": "mxbaylee",
   "license": "MIT",
@@ -23,6 +23,7 @@
       "icon": "icon.png",
       "name": "index",
       "title": "Generate Email",
+      "subtitle": "Using Active Browser Window",
       "description": "Generate dynamic email addresses for registration.",
       "mode": "view"
     }
