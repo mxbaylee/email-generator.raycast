@@ -1,0 +1,49 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "email-generator-raycast",
+  "title": "Email Generator",
+  "description": "Generate dynamic email addresses for registration.",
+  "icon": "icon.png",
+  "author": "mxbaylee",
+  "license": "MIT",
+  "categories": ["Security"],
+  "preferences": [
+    {
+      "title": "Email Domain",
+      "name": "emailDomain",
+      "type": "textfield",
+      "required": true,
+      "description": "Enter the domain of your provider.",
+      "default": "privaterelay.example.com",
+      "placeholder": "privaterelay.example.com"
+    }
+  ],
+  "commands": [
+    {
+      "icon": "icon.png",
+      "name": "index",
+      "title": "Generate Email",
+      "description": "Generate dynamic email addresses for registration.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "~22.5.0",
+    "@types/react": "^17.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "typescript": "^4.4.3",
+    "vitest": "^2.1.1"
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "ray build -e dist",
+    "dev": "ray develop"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
